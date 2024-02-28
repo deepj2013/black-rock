@@ -11,7 +11,7 @@ function HomeJoinUs() {
 
       <div className="w-full flex flex-wrap container mx-auto mt-10">
         <div className="w-full lg:w-[50%]  flex p-8 flex-col justify-center lg:h-full">
-          <img src={imagesConstant.table} />
+          <img src={imagesConstant.joinUs} />
         </div>
 
         <div className="w-full lg:w-[50%] p-8  flex flex-col justify-center gap-10 ">

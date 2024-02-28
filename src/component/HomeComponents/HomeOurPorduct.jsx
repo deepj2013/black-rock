@@ -3,6 +3,22 @@ import { imagesConstant } from "../../utils/ImageConstant";
 import { NavLink } from "react-router-dom";
 
 function HomeOurPorduct() {
+
+  const data=[
+  
+    {
+      name:'Sofa',
+      img:imagesConstant?.Chair
+    },
+    {
+      name:'Sofa',
+      img:imagesConstant?.chairTable
+    },
+    {
+      name:'Sofa',
+      img:imagesConstant?.table1
+    }
+  ]
   return (
     <div className="w-screen min-h-screen bg-[#F4F4F4]  py-16">
       <div className="container mx-auto">
@@ -17,11 +33,11 @@ function HomeOurPorduct() {
         </NavLink>
 
         <div className="flex justify-between flex-wrap">
-          {[1, 1, 1].map((ele, ind) => {
+          {data.map((ele, ind) => {
             return (
               <div className=" w-[90%] mx-auto lg:w-[30%] bg-white rounded-2xl mt-10 lg:mt-0">
                 <NavLink to={"/productInfomation"}>
-                  <img src={imagesConstant.table} />
+                  <img className="w-full" src={ele.img} />
                   <div className="flex items-center justify-between px-3">
                     <p className="text-2xl font-bold py-4">Sofa</p>
                     <svg

@@ -32,8 +32,8 @@ function HomeComponents() {
 
       </div>
 
-      <div data-aos="fade-up"  className="w-full lg:w-[50%] border flex flex-col justify-center h-full">
-            <img src={imagesConstant.table}/>        
+      <div data-aos="fade-up"  className="w-full lg:w-[50%]  flex flex-col justify-center h-full">
+            <img src={imagesConstant.img2}/>        
       </div>
 
     </div>

@@ -48,7 +48,7 @@ function OurServices() {
         </div>
 
         <div className="w-full lg:w-[50%]  relative flex p-8 flex-col justify-center lg:h-full">
-          <img className="z-40 " src={imagesConstant.table} />
+          <img className="z-40 " src={imagesConstant.services2} />
 
           <div className="h-full top-0 -right-6 absolute bg-yellowShade w-[50%] rounded-2xl"></div>
         </div>
@@ -57,7 +57,7 @@ function OurServices() {
       <div>
         <div className="w-full mt-10 flex flex-wrap container mx-auto">
           <div className="w-full lg:w-[50%]  relative flex p-8 flex-col justify-center lg:h-full">
-            <img className="z-40 " src={imagesConstant.table} />
+            <img className="z-40 " src={imagesConstant.services1} />
 
             <div className="h-full top-0 -right-6 absolute bg-yellowShade w-[50%] rounded-2xl"></div>
           </div>
@@ -116,7 +116,7 @@ function OurServices() {
         </div>
 
         <div className="w-full lg:w-[50%]  relative flex p-8 flex-col justify-center lg:h-full">
-          <img className="z-40 " src={imagesConstant.table} />
+          <img className="z-40 " src={imagesConstant.services3} />
 
           <div className="h-full top-0 -right-6 absolute bg-yellowShade w-[50%] rounded-2xl"></div>
         </div>

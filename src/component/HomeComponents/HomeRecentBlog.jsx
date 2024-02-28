@@ -2,6 +2,21 @@ import React from "react";
 import { imagesConstant } from "../../utils/ImageConstant";
 
 function HomeRecentBlog() {
+  const data=[
+    {
+      name:'',
+      img:imagesConstant.tv1
+    },
+    {
+      name:'',
+      img:imagesConstant.tv2
+    },
+    {
+      name:'',
+      img:imagesConstant.tv3
+    },
+
+  ]
   return (
     <div className="w-screen  bg-[#F4F4F4]  py-16">
       <div className="container mx-auto">
@@ -14,10 +29,10 @@ function HomeRecentBlog() {
         </p>
 
         <div className="flex justify-between flex-wrap">
-          {[1, 1, 1].map((ele, ind) => {
+          {data.map((ele, ind) => {
             return (
               <div className=" w-[90%] mx-auto lg:w-[30%]  rounded-2xl mt-10 lg:mt-0">
-                <img src={imagesConstant.table} />
+                <img className="w-full" src={ele.img} />
                 <div className="flex items-start flex-col justify-between px-3">
                   <p className=" font-bold py-4 leading-5 text-lg">First Time Home Owner Ideas</p>
                 <p className="leading-snug">by <strong>Nana</strong>  Ama on <strong> Nov 18th, 2022 </strong></p>

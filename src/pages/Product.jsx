@@ -3,6 +3,8 @@ import Button from "../component/Common/Button";
 import { imagesConstant } from "../utils/ImageConstant";
 
 function Product() {
+
+  const [activeIndex,setActiveIndex]=useState(0)
   const product = [
     {
       name: "All Products",
@@ -32,6 +34,36 @@ function Product() {
       name: "Floor Lamps",
     },
   ];
+
+
+  const data=[
+  
+    {
+      name:'Chair',
+      img:imagesConstant?.Chair
+    },
+    {
+      name:'Office Table',
+      img:imagesConstant?.chairTable
+    },
+    {
+      name:'Furniture Set',
+      img:imagesConstant?.table1
+    },
+    {
+      name:'Sofa',
+      img:imagesConstant?.Chair
+    },
+    {
+      name:'Office Table',
+      img:imagesConstant?.chairTable
+    },
+    {
+      name:'Sofa',
+      img:imagesConstant?.table1
+    }
+
+  ]
   const [productFilter, setProductFilter] = useState(product);
   return (
     <div className="container mx-auto pt-32 h-screen overflow-hidden">
@@ -43,9 +75,10 @@ function Product() {
         {productFilter.map((ele, ind) => {
           return (
             <button
+            onClick={()=>setActiveIndex(ind)}
               key={ind}
               className={`${
-                ind == 1 ? "bg-blueShade text-white " : "bg-white text-black "
+                activeIndex==ind ? "bg-blueShade text-white " : "bg-white text-black "
               } rounded-full px-6 border border-gray-200 mr-2`}
             >
               {ele.name}
@@ -54,13 +87,13 @@ function Product() {
         })}
       </div>
 
-      <div className="flex justify-between pb-20 flex-wrap my-10 h-[80vh] overflow-scroll">
-        {[1, 1, 11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1,1].map((ele, ind) => {
+      <div className="flex justify-between pb-40 flex-wrap my-10 h-[80vh] overflow-scroll">
+        {data.map((ele, ind) => {
           return (
             <div className=" w-[90%] mx-auto lg:w-[30%] shadow bg-white rounded-2xl mt-16">
-              <img src={imagesConstant.table} />
+              <img className="w-full" src={ele.img} />
               <div className="flex items-center justify-between px-3">
-                <p className="text-2xl font-bold py-4">Sofa</p>
+                <p className="text-2xl font-bold py-4">{ele?.name}</p>
                 <svg
                   width="172"
                   height="26"

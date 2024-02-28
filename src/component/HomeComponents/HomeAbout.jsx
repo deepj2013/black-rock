@@ -8,7 +8,7 @@ function HomeAbout() {
          <div className="w-full flex flex-wrap container mx-auto">
 
          <div className="w-full lg:w-[50%]  flex p-8 flex-col justify-center lg:h-full">
-            <img src={imagesConstant.table}/>        
+            <img src={imagesConstant.Img1}/>        
       </div>
 
       <div className="w-full lg:w-[50%] p-8  flex flex-col justify-center gap-10 ">

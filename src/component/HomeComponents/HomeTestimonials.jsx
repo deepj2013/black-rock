@@ -39,13 +39,14 @@ export default function HomeTestimonials() {
               sed vitae diam. Fusce tincidunt nisl mi, at molestie odio accumsan
               non. Pellentesque ma’’
             </p>
-            <div className="h-16 w-16 rounded-full border mt-10"></div>
+            {/* <div className="h-16 w-16 rounded-full border mt-10"> */}
+            <img className='max-h-16 max-w-16 mt-7 rounded-full' src={'https://files.123freevectors.com/wp-content/original/503818-beautiful-indian-girl-image.jpg'}/>
+            {/* </div> */}
 
             <div className="font-semibold mt-4 text-xl">
               Michelle Anna
               <p className="text-sm  ">CEO, Co-Founder, XYZ Inc.</p>
             </div>
-            {/* <img className='' src={'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d74d8bb9-c4eb-41fe-a80b-510daabffc90/width=450/00222-2699322709-icbinpICantBelieveIts_final-photo%20of%20beautiful%20(gg4d0t-130_0.99),%20a%20woman%20in%20a%20(fire_1.1),%20perfect%20hair,%20hair%20upsweep%20updo,%20wearing%20(prom%20dress_1.2),%20models.jpeg'}/> */}
           </div>
         </SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
