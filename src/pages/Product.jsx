@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import Button from "../component/Common/Button";
 import { imagesConstant } from "../utils/ImageConstant";
 import Footer from "../component/Common/Footer";
+import { useNavigate } from "react-router";
 
 function Product() {
 
   const [activeIndex,setActiveIndex]=useState(0)
+  const navigate=useNavigate()
   const product = [
     {
       name: "All Products",
@@ -91,7 +93,7 @@ function Product() {
       <div className="flex justify-between pb-40 flex-wrap my-10 h-[80vh] overflow-scroll">
         {data.map((ele, ind) => {
           return (
-            <div className=" w-[90%] mx-auto lg:w-[30%] shadow bg-white rounded-2xl mt-16">
+            <div onClick={()=>navigate('/productInfomation')}  className=" w-[90%] mx-auto lg:w-[30%] shadow bg-white rounded-2xl mt-16">
               <img className="w-full" src={ele.img} />
               <div className="flex items-center justify-between px-3">
                 <p className="text-2xl font-bold py-4">{ele?.name}</p>

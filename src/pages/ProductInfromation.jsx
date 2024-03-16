@@ -30,7 +30,8 @@ export function ProductInfromation() {
     );
 
     return (
-        <div className="container bg-white mx-auto pt-32 flex flex-wrap">
+        <div>
+        <div className="container bg-white mx-auto pt-32 flex flex-wrap mb-20">
             <div className="grid gap-4 w-[90%] mx-auto lg:w-[50%]">
                 <div className="">
                     <img
@@ -80,6 +81,7 @@ export function ProductInfromation() {
                     }
 
                 </div>
+            </div>
             </div>
             <Footer/>
         </div>

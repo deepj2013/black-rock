@@ -37,7 +37,7 @@ function HomeWhyChooseUs() {
         meticulously designed to exceed
         your expectations.`,
         icon: (
-            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="42" height="42" viewBox="0 0 42 42" className="border" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_56_134)">
             <path d="M25.7504 17.0986L19.4399 23.059L16.4113 19.9433C16.0755 19.5976 15.5227 19.5897 15.1774 19.9255C14.8317 20.2616 14.8238 20.8141 15.1596 21.1598L18.792 24.8886C19.1294 25.2281 19.6748 25.2397 20.0262 24.9146L26.9672 18.3678C27.1358 18.2088 27.2342 17.9893 27.2407 17.7578C27.2472 17.5264 27.1614 17.3017 27.0021 17.1335C26.6643 16.7824 26.1073 16.767 25.7504 17.0986Z" fill="#008FD7"/>
             <path d="M21.0677 7.92566C13.8555 7.92566 7.99121 13.79 7.99121 21.0021C7.99121 28.2146 13.8555 34.0789 21.0677 34.0789C28.2801 34.0789 34.1445 28.2146 34.1445 21.0021C34.1445 13.79 28.2801 7.92566 21.0677 7.92566ZM21.0677 32.3284C14.8183 32.3284 9.74176 27.2429 9.74176 21.0021C9.74176 14.7613 14.8183 9.67621 21.0677 9.67621C27.3231 9.67621 32.3939 14.747 32.3939 21.0021C32.3939 27.2572 27.3231 32.3284 21.0677 32.3284Z" fill="#008FD7"/>
@@ -96,11 +96,11 @@ function HomeWhyChooseUs() {
       },
   ];
   return (
-    <div className="w-full  min-h-screen py-10 mt-20 flex justify-center container mx-auto">
+    <div className="w-full  h-screen py-10 mt-20 flex justify-center container mx-auto">
       <div className="w-full flex flex-wrap">
         <div className="w-full lg:w-[50%] p-8  flex flex-col justify-start gap-10 ">
           <p className=" text-2xl lg:text-3xl font-semibold leading-loose">
-            About Us
+          Why Choose Us
           </p>
 
           <p className="font-extralight text-base text-grayShade">
@@ -110,7 +110,20 @@ function HomeWhyChooseUs() {
             excellence.
           </p>
 
-          <p className="font-normal text-base text-grayShade">
+          <p className="font-extralight text-base text-grayShade">
+            Import and export of a wide range of goods including, household
+            products, textiles, and more.Procurement services for businesses
+            seeking reliable suppliers
+          </p>
+
+          <p className="font-extralight text-base text-grayShade">
+            Import and export of a wide range of goods including, household
+            products, textiles, and more.Procurement services for businesses
+            seeking reliable suppliers
+          </p>
+
+
+          <p className="font-extralight text-base text-grayShade">
             Import and export of a wide range of goods including, household
             products, textiles, and more.Procurement services for businesses
             seeking reliable suppliers
@@ -118,7 +131,7 @@ function HomeWhyChooseUs() {
           <Button text={"Read More"} />
         </div>
 
-        <div className="w-full lg:w-[50%]  items-center   flex  flex-wrap  justify-between">
+        <div className="w-full lg:w-[50%]  h-[85vh] items-center justify-start   flex  flex-wrap ">
           {
             data.map((ele,ind)=>{
                 return(
