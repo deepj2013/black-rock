@@ -20,7 +20,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="bg-white shadow-xl  fixed w-full z-20 top-0 start-0 -b -gray-200 ">
+    <nav className="bg-white shadow-xl  fixed w-full z-50 top-0 start-0 -b -gray-200 ">
       <div className="container flex flex-wrap items-center justify-between  mx-auto p-4">
         <a
           href="https://flowbite.com/"
@@ -32,7 +32,7 @@ function Navbar() {
             alt="Black Rock Logo"
           />
 
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">
+          <span className="self-center text-2xl font-semibold metal-mania-regular whitespace-nowrap dark:text-black">
             Black Rock
           </span>
         </a>
@@ -102,6 +102,23 @@ function Navbar() {
                 </NavLink>
               </p>
             </li>
+
+            <li>
+              <p className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
+                <NavLink
+                  to={"/product"}
+                  className={({ isActive }) => {
+                    return isActive
+                      ? "text-blueShade border-b-4 border-blueShade pb-3 px-5 rounded"
+                      : "text-black";
+                  }}
+                >
+                  Products
+                </NavLink>
+              </p>
+            </li>
+
+
             <li>
               <p className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
                 <NavLink

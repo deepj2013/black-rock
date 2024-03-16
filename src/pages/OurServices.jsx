@@ -18,7 +18,8 @@ function OurServices() {
     </svg>
   );
   return (
-    <div className="container mx-auto pt-32 h-screen ">
+    <>
+    <div className="container mx-auto pt-32  ">
       <p className=" text-2xl text-center lg:text-3xl font-semibold leading-loose">
         Our Services
       </p>
@@ -122,8 +123,9 @@ function OurServices() {
           <div className="h-full top-0 -right-6 absolute bg-yellowShade w-[50%] rounded-2xl"></div>
         </div>
       </div>
-      <Footer/>
     </div>
+      <Footer/>
+    </>
   );
 }
 
