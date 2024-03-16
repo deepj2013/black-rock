@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Button from "../component/Common/Button";
 import { imagesConstant } from "../utils/ImageConstant";
+import Footer from "../component/Common/Footer";
 
 function Product() {
 
@@ -179,6 +180,7 @@ function Product() {
           );
         })}
       </div>
+      <Footer/>
     </div>
   );
 }

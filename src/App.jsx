@@ -9,6 +9,7 @@ import OurServices from './pages/OurServices'
 import Contact from './pages/Contact'
 import Aos from 'aos'
 import "aos/dist/aos.css"; 
+import Footer from './component/Common/Footer'
 
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
   }, []);
   
   return (
-    <div className=" mx-auto bg-white h-screen">
+    <>
+    <div className=" mx-auto bg-white  ">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -30,10 +32,11 @@ function App() {
         <Route path="/productInfomation" element={<ProductInfromation />} />
         <Route path="/services" element={<OurServices />} />
         <Route path="/contact" element={<Contact />} />
-
-        
       </Routes>
+      
     </div>
+      
+      </>
   );
 }
 

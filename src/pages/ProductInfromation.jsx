@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCircle } from "react-icons/fa6";
+import Footer from "../component/Common/Footer";
 export function ProductInfromation() {
     const data = [
         {
@@ -80,6 +81,7 @@ export function ProductInfromation() {
 
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { imagesConstant } from "../utils/ImageConstant";
+import Footer from "../component/Common/Footer";
 
 function OurServices() {
   const Icon = (
@@ -121,6 +122,7 @@ function OurServices() {
           <div className="h-full top-0 -right-6 absolute bg-yellowShade w-[50%] rounded-2xl"></div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

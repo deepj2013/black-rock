@@ -1,6 +1,7 @@
 import React from 'react'
 import { imagesConstant } from "../utils/ImageConstant";
 import Button from '../component/Common/Button';
+import Footer from '../component/Common/Footer';
 function Contact() {
   return (
     <div className="w-screen mx-auto pt-32 h-screen ">
@@ -23,7 +24,7 @@ function Contact() {
         </div>
         </div>
     </div>
-
+    <Footer/>
     </div>
   )
 }
