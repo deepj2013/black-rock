@@ -1,6 +1,7 @@
 import React from "react";
 import { imagesConstant } from "../utils/ImageConstant";
 import { FaCircle } from "react-icons/fa6";
+import Footer from "../component/Common/Footer";
 
 function About() {
 
@@ -99,6 +100,7 @@ to offer a diverse range of products at competitive prices.
           <img src={imagesConstant.table} />
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import HomeOurPorduct from '../component/HomeComponents/HomeOurPorduct'
 import HomeTestimonials from '../component/HomeComponents/HomeTestimonials'
 import HomeRecentBlog from '../component/HomeComponents/HomeRecentBlog'
 import HomeJoinUs from '../component/HomeComponents/HomeJoinUs'
+import Footer from '../component/Common/Footer'
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
         <HomeTestimonials/>
         <HomeRecentBlog/>
         <HomeJoinUs/>
+        <Footer/>
     </div>
   )
 }
