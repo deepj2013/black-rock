@@ -1,85 +1,24 @@
 import React from "react";
-import { imagesConstant } from "../utils/ImageConstant";
-import { FaCircle } from "react-icons/fa6";
-import Footer from "../component/Common/Footer";
-import OverlayBannerVideo from "../component/Common/OverlayBannerVideo";
-import OutlineButton from "../component/Common/OutlineButton";
+import { imagesConstant } from "../../utils/ImageConstant";
+import OutlineButton from "../Common/OutlineButton";
 import { Link } from "react-router-dom";
-import ContactButton from "../component/Common/ContactButton";
-import GetInTouch from "../component/Common/GetInTouch";
-import LightBoxGallary from "../component/Common/LightBoxGallary";
-import ImageCardDes from "../component/Common/ImageCardDes";
 
-function About() {
-  const VisionArray = [
-    {
-      title: `Integrity: We conduct business with honesty, transparency, and 
-      ethical standards`,
-    },
-    {
-      title: `Customer Focus: We prioritize understanding and exceeding our 
-      customers' needs and expectations.`,
-    },
-    {
-      title: `Innovation: We continuously seek creative solutions to drive 
-      efficiency and growth.`,
-    },
-    {
-      title: `Collaboration: We value teamwork and actively collaborate with
-      partners, suppliers, and customers.`,
-    },
-    {
-      title: `Excellence: We strive for excellence in all aspects of our operations,
-      aiming for continuous improvement.`,
-    },
-  ];
+import ImageCard from "../Common/ImageCard";
+import ContactButton from "../Common/ContactButton";
+import GetInTouch from "../Common/GetInTouch";
+
+import LightBoxGallary from "../Common/LightBoxGallary";
+import ImageCardDes from "../Common/ImageCardDes";
+import OverlayBanner from "../Common/OverlayBanner";
+import { MdAddIcCall } from "react-icons/md";
+import { MdOutlineMailOutline } from "react-icons/md";
+import FillBlackButton from "../Common/FillBlackButton";
+
+function HomeService1() {
   return (
-    <div>
-      <div className="container mx-auto py-10  w-full max-w-screen-xl px-4 md:px-16">
-        <div className="grid grid-cols-2 gap-5">
-          <div className="flex justify-center items-center p-5">
-            <div>
-              <p className=" text-2xl lg:text-3xl font-semibold leading-loose text-wsDark">
-                About Us
-              </p>
-
-              <p className="my-5">
-                Muse design is a top-notch company that was established in 2007
-                by <strong>Michael Dudnyk and Stanislava Rudas-Dudnyk</strong>.
-                The company manufactures and delivers the best services of
-                interior designing products at an affordable price. We offer the
-                best interior designing services throughout the UAE.
-              </p>
-
-              <p className="my-5">
-                We have a highly qualified staff that is available 24/7 for you.
-                Our professionals can turn your normal-looking interior into a
-                modern, aesthetic, and luxurious one by doing a few
-                modifications. We provide the services of interior designing of
-                commercial, institutional, residential, and other architectural
-                projects.
-              </p>
-              <OutlineButton name="Our Projects" />
-            </div>
-          </div>
-          <div>
-            <OverlayBannerVideo
-              imageUrl="https://musedesign.ae/wp-content/uploads/2022/03/commercail.jpeg"
-              videoId="tDoHXSgyn_A?list=TLGGa8QJbjCeytkwNDA0MjAyNA"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="container bg-wsLight mx-auto py-10  w-full max-w-screen-xl px-4 md:px-16">
-        <div className="">
-          <h2 className="text-center text-wsDark text-3xl font-semibold uppercase">
-            Our Incredible Interior Design Services
-          </h2>
-        </div>
-        <div className="flex justify-center">
-          <img width="300px" src={imagesConstant.arrowDesign} alt="" />
-        </div>
-        <div className="grid lg:grid-cols-3">
+    <div className="bg-wsLight">
+      <div className="  container py-5  mx-auto w-full max-w-screen-xl px-4 md:px-16">
+        <div className="grid lg:grid-cols-2">
           <div className=" bg-white p-10 border">
             <div className="flex justify-center items-center">
               <img width="500px" src={imagesConstant.int3} alt="" />
@@ -100,43 +39,64 @@ function About() {
               </Link>
             </h2>
           </div>
-          <div className=" bg-white p-10 border">
-            <div className="flex justify-center items-center">
-              <img src={imagesConstant.int7} alt="" />
-            </div>
-            <h2 className="text-2xl text-wsDark font-semibold mt-5 hover:text-wsDarker">
-              <Link to="/" className="hover:text-wsDarker">
-                Hotel Design
-              </Link>
-            </h2>
-          </div>
         </div>
         <div className="my-10">
           <ContactButton />
         </div>
-      </div>
-      <div className="bg-wsLight ">
-        <div className="container bg-white  mx-auto py-10  w-full max-w-screen-xl px-4 md:px-16 ">
-          <div className="">
-            <h2 className="text-center text-wsDark text-3xl font-semibold uppercase">
-              Our Incredible Interior Design Services
-            </h2>
-          </div>
-          <div className="flex justify-center">
-            <img width="300px" src={imagesConstant.arrowDesign} alt="" />
-          </div>
-          <p>
-            Interior designing is one of the most crucial elements for making
-            your entire home look so beautiful and amazing. Whenever someone
-            visits your home, the first thing they interact with is the interior
-            of your home. So, by hiring our qualified staff/team of
-            professionals, you can easily give a perfect and modern look to your
-            home.Our company achieves the level of excellence and breaks the
-            records for creating the remarkable masterpiece of interior work. We
-            offer various services, like:
-          </p>
+        <div className="grid lg:grid-cols-3 gap-4">
+          <ImageCard
+            title="Beauty Salon Interior Design"
+            navpath="/"
+            src={imagesConstant.int1}
+          />
+          <ImageCard
+            title="Apartment Interior Design"
+            navpath="/"
+            src={imagesConstant.int2}
+          />
+          <ImageCard
+            title="Landscape Design"
+            navpath="/"
+            src={imagesConstant.int3}
+          />
+
+          <ImageCard
+            title="Barber Shop Interior Design"
+            navpath="/"
+            src={imagesConstant.int4}
+          />
+          <ImageCard
+            title="Hotel Interior Design"
+            navpath="/"
+            src={imagesConstant.int5}
+          />
+          <ImageCard
+            title="Curtains In Dubai"
+            navpath="/"
+            src={imagesConstant.int6}
+          />
+
+          <ImageCard
+            title="Office interior Design"
+            navpath="/"
+            src={imagesConstant.int7}
+          />
+          <ImageCard
+            title="Restaurant Interior Design"
+            navpath="/"
+            src={imagesConstant.int8}
+          />
+          <ImageCard
+            title="Renovation Company"
+            navpath="/"
+            src={imagesConstant.int9}
+          />
         </div>
-        <div className="bg-white py-10">
+        <div>
+          <GetInTouch />
+        </div>
+      </div>
+      <div className="bg-white py-10">
         <div className="container py-5  mx-auto w-full max-w-screen-xl px-4 md:px-16">
           <div className="">
             <h2 className="text-center text-grayShade text-4xl font-semibold uppercase">
@@ -248,11 +208,97 @@ function About() {
           </div>
         </div>
       </div>
+      <div>
+        <OverlayBanner title="TRUST THE EXPERTS FOR ALL YOUR BUILDING NEEDS" />
       </div>
-
-      <Footer />
+      <div className="bg-wsLight  mt-10">
+        <div className="container bg-white py-10  mx-auto w-full max-w-screen-xl px-4 md:px-16">
+          <div className="">
+            <h2 className="text-center text-wsDark text-3xl font-semibold capitalize">
+              Get 100% Quality Interior Fitting & Furnishing Service UAE
+            </h2>
+          </div>
+          <div className="flex justify-center">
+            <img width="300px" src={imagesConstant.arrowDesign} alt="" />
+          </div>
+          <div className=" my-4">
+            <div>
+              <p className="my-5">
+                We at Muse design will help you to create the perfect ambience
+                for your house or office space with our expertise. Our
+                specialised Modern Interior Design Dubai is meant to please you
+                in those wonderful ways that you probably haven’t experienced to
+                date. Check out the services!
+              </p>
+              <ul className="my-5 max-w-3xl space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                <li>Proper Planning on a Project.</li>
+                <li>Professional Assessment and Feasibility Study.</li>
+                <li>Experienced, Professional, and Well Qualified Liaison.</li>
+                <li>Better Utilization of Resources to Save Time and Money.</li>
+                <li>Quality, Dynamic and Innovative Designs</li>
+                <li>
+                  Expectations Meet Reality with WOW Factor. Ravishing
+                  Aesthetic!
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-wsLight  mt-10">
+        <div className="container bg-wsLight py-10  mx-auto w-full max-w-screen-xl px-4 md:px-16">
+          <div className="">
+            <h2 className="text-center text-grayShade text-4xl font-semibold uppercase">
+              Our Services
+            </h2>
+          </div>
+          <div className="flex justify-center">
+            <img width="300px" src={imagesConstant.arrowDesign} alt="" />
+          </div>
+          <div className="grid lg:grid-cols-2 gap-5 my-4">
+            <div className="bg-black p-10">
+              <h2 className="text-white text-4xl font-bold">
+                Our Interior Design Team In UAE
+              </h2>
+              <p className="my-5 text-white">
+                Our team is engaged mainly in Dubai, but we also span to
+                Sharjah, UAE, RAK, and many other states to provide our interior
+                design Dubai Service. We believe in honesty and open
+                communication. Each team member focuses on integrity and hard
+                work; this is the core value behind our success.
+              </p>
+              <div className="grid grid-cols-2 text-white">
+                <div>
+                  <h6>Phone No</h6>
+                  <p>+9876544435</p>
+                </div>
+                <div>
+                  <h6>Email ID</h6>
+                  <p>info@sdfghj.com</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-3xl my-3 font-bold">Contact us</h2>
+              <form action="">
+              <div className="grid grid-cols-2 gap-4 text-gray-500 ">
+                <input type="text" placeholder="Name"/>
+                <input type="email" placeholder="Email"  />
+                <input type="text" placeholder="Phone" />
+                <input type="text" placeholder="Subject"/>
+              </div>
+              <div className="grid grid-cols-1 gap-4 my-4 text-gray-500">
+                <textarea placeholder="Message" rows="4" className="p-4"></textarea>
+                
+              </div>
+              <FillBlackButton name="Submit"/>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
 
-export default About;
+export default HomeService1;

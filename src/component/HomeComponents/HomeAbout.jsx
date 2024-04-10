@@ -1,44 +1,50 @@
-import React from 'react'
-import { imagesConstant } from '../../utils/ImageConstant'
-import Button from '../Common/Button'
+import React from "react";
+import { imagesConstant } from "../../utils/ImageConstant";
+import OutlineButton from "../Common/OutlineButton";
 
 function HomeAbout() {
   return (
-    <div className='w-full bg-[#F4F4F4]  py-10 mt-20 flex justify-center'>
-         <div className="w-full flex flex-wrap container mx-auto">
+    <div className="bg-wsLight">
+      <div className="  container py-10  mx-auto w-full max-w-screen-xl px-4 md:px-16">
+        <div className="w-full   mx-auto bg-white p-10">
+          <div className="">
+            <h2 className="text-center text-wsDark text-3xl font-semibold">
+              Design Your Commercial & Residential Area With Our Incredible
+              Interior Design Dubai Services
+            </h2>
+          </div>
+          <div className="flex justify-center">
+            <img src={imagesConstant.arrowDesign} alt="" />
+          </div>
+          <p className="my-5">
+            <strong>Interior decoration</strong> is the exceptionally ravishing
+            home decor distinction by Musedesign.ae, among all those interior
+            decorator companies in Dubai. Our truly remarkable interior
+            ornamentation is one mind-blowing manner you can give your existing
+            spaces a noteworthy lift up.
+          </p>
+          <p className="my-5">
+            No matter if its commercial or residential space a perfect
+            decoration color scheme will brighten up the entire space and add a
+            perfect charm to it. To explore our exclusive
+            <strong>interior designing Dubai</strong> services keep on reading!
+          </p>
+          <p>
+            We are the leading interior masters in Dubai serving customers with
+            all their desired needs. Hiring our professional designer for
+            embellishing your interior will surely be the best decision.
+          </p>
 
-         <div className="w-full lg:w-[50%]  flex p-8 flex-col justify-center lg:h-full">
-            <img src={imagesConstant.Img1}/>        
+          <div>
+            <div className="flex justify-between my-5 mx-72">
+              <OutlineButton name="See Our Projects" />
+              <OutlineButton name="Send Enquiry Now" />
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className="w-full lg:w-[50%] p-8  flex flex-col justify-center gap-10 ">
-
-
-        <p className=" text-xl lg:text-3xl font-semibold leading-loose">
-        About Us
-        </p>
-
-        <p className="font-extralight text-base text-grayShade">
-        Black Rock Trading FZ LLC has steadily grown from a local trading
-firm to a reputable player in the global market. Our journey has 
-been characterized by dedication, innovation, and a commitment 
-to excellence.
-        </p>
-
-        <p className='font-normal text-base text-grayShade'>
-        Import and export of a wide range of goods including, household
-products, textiles, and more.Procurement services for businesses
-seeking reliable suppliers
-        </p>
-        <Button text={'Read More'}/>
-
-      </div>
-
-    
-
     </div>
-    </div>
-  )
+  );
 }
 
-export default HomeAbout
+export default HomeAbout;

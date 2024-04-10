@@ -20,26 +20,24 @@ function Navbar() {
   ];
 
   return (
-    <nav className="bg-white shadow-xl  fixed w-full z-50 top-0 start-0 -b -gray-200 ">
+    <nav className="backdrop-blur-sm  bg-white/50 shadow-xl  w-full z-50 top-0 start-0  ">
       <div className="container flex flex-wrap items-center justify-between  mx-auto p-4">
         <a
-          href="https://flowbite.com/"
+          href="#"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
-            className="h-10"
+            className="h-14"
             src={imagesConstant.Logo}
             alt="Black Rock Logo"
           />
 
-          <span className="self-center text-2xl font-semibold metal-mania-regular whitespace-nowrap dark:text-black">
-            Black Rock
-          </span>
+          
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
-            className="text-white bg-blueShade rounded-full px-10"
+            className="text-white bg-wsDark rounded-full px-10"
           >
             Sign Up
           </button>
@@ -79,7 +77,7 @@ function Navbar() {
                   to={"/"}
                   className={({ isActive }) => {
                     return isActive
-                      ? "text-blueShade border-b-4 border-blueShade pb-3 px-5 rounded"
+                      ? "text-wsDark border-b-4 border-wsDark pb-3 px-5 rounded"
                       : "text-black";
                   }}
                 >
@@ -94,7 +92,7 @@ function Navbar() {
                   to={"/about"}
                   className={({ isActive }) => {
                     return isActive
-                      ? "text-blueShade border-b-4 border-blueShade pb-3 px-5 rounded"
+                      ? "text-wsDark border-b-4 border-wsDark pb-3 px-5 rounded"
                       : "text-black";
                   }}
                 >
@@ -109,7 +107,7 @@ function Navbar() {
                   to={"/product"}
                   className={({ isActive }) => {
                     return isActive
-                      ? "text-blueShade border-b-4 border-blueShade pb-3 px-5 rounded"
+                      ? "text-wsDark border-b-4 border-wsDark pb-3 px-5 rounded"
                       : "text-black";
                   }}
                 >
@@ -125,7 +123,7 @@ function Navbar() {
                   to={"/services"}
                   className={({ isActive }) => {
                     return isActive
-                      ? "text-blueShade border-b-4 border-blueShade pb-3 px-5 rounded"
+                      ? "text-wsDark border-b-4 border-wsDark pb-3 px-5 rounded"
                       : "text-black";
                   }}
                 >
@@ -140,7 +138,7 @@ function Navbar() {
                   to={"/contact"}
                   className={({ isActive }) => {
                     return isActive
-                      ? "text-blueShade border-b-4 border-blueShade pb-3 px-5 rounded"
+                      ? "text-wsDark border-b-4 border-wsDark pb-3 px-5 rounded"
                       : "text-black";
                   }}
                 >

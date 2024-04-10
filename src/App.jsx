@@ -9,7 +9,7 @@ import OurServices from './pages/OurServices'
 import Contact from './pages/Contact'
 import Aos from 'aos'
 import "aos/dist/aos.css"; 
-import Footer from './component/Common/Footer'
+
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
   
   return (
     <>
-    <div className=" mx-auto bg-white  ">
+    <div className=" mx-auto bg-white overflow-hidden  ">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -33,6 +33,7 @@ function App() {
         <Route path="/services" element={<OurServices />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      
       
     </div>
       

@@ -81,7 +81,7 @@ function Product() {
             onClick={()=>setActiveIndex(ind)}
               key={ind}
               className={`${
-                activeIndex==ind ? "bg-blueShade text-white " : "bg-white text-black "
+                activeIndex==ind ? "bg-wsDark text-white " : "bg-white text-black "
               } rounded-full px-6 border border-gray-200 mr-2`}
             >
               {ele.name}
