@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 function ImageCardDes({ navpath, src, title, des }) {
   return (
-    <div className=" bg-white p-5 border">
+    <div className=" bg-white p-5 border hover:bg-theme">
       <Link
         to={navpath}
-        className="hover:text-wsDarker transition duration-300"
+        className="hover:white transition duration-300"
       >
         <div className="flex justify-center items-center">
           <img src={src} alt="" />

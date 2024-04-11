@@ -20,7 +20,7 @@ function OurServices() {
   return (
     <>
     <div className="container mx-auto pt-32  ">
-      <p className=" text-2xl text-center lg:text-3xl font-semibold leading-loose">
+      <p className="  text-center text40 font-semibold leading-loose">
         Our Services
       </p>
 

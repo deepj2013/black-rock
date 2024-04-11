@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from './component/Navbar'
 import Home from './pages/Home'
-import { Route, Routes } from 'react-router'
+import { Route, Routes, useLocation } from 'react-router'
 import About from './pages/About'
 import Product from './pages/Product'
 import { ProductInfromation } from './pages/ProductInfromation'
@@ -9,6 +9,11 @@ import OurServices from './pages/OurServices'
 import Contact from './pages/Contact'
 import Aos from 'aos'
 import "aos/dist/aos.css"; 
+import { FaSearchengin } from 'react-icons/fa6'
+import { IoLogoFlickr } from "react-icons/io5";
+import ProductCategory from './pages/ProductCategory'
+import Admin from './admin/Admin'
+import Dashboard from './admin/DashboardPages/Dashboard'
 
 
 
@@ -20,10 +25,39 @@ function App() {
       //   once: , // Whether animation should happen only once
     });
   }, []);
+
+
+  const location = useLocation();
+  var currentPathname = location.pathname;
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const getToken=localStorage.getItem('isLoggedIn');
+  useEffect(() => {
+    if(getToken){
+      setIsLoggedIn(true)
+    }
+    else{
+      setIsLoggedIn(false)
+    }
+  }, []);
+
+
+
+  console.log(location.search,'currentPathname');
   
+
+  const token=localStorage.getItem('token');
   return (
     <>
-    <div className=" mx-auto bg-white overflow-hidden  ">
+   {!isLoggedIn && <div className=''>
+    <div className=" mx-auto  overflow-scroll h-screen relative rounded-2xl">
+    <div className='fixed h-screen w-20 hidden lg:flex  bg-background z-50 rounded-t-lg overflow-hidden'>
+      <div>
+        <div className=' h-20 bg-theme w-20 flex justify-center items-center'>
+          <IoLogoFlickr className='text-4xl text-white'/>
+        </div>
+      </div>
+    </div>
+    <div className='lg:ml-20'>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -32,11 +66,21 @@ function App() {
         <Route path="/productInfomation" element={<ProductInfromation />} />
         <Route path="/services" element={<OurServices />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/ProductCategory" element={<ProductCategory />} />
+        <Route path="/Admin" element={<Admin  setIsLoggedIn={setIsLoggedIn}/>} />
+
       </Routes>
-      
+      </div>
       
     </div>
       
+      </div>}
+
+  {isLoggedIn &&    <Routes>
+        <Route path="/Dashboard" element={<Dashboard />} />
+
+        
+      </Routes>}
       </>
   );
 }

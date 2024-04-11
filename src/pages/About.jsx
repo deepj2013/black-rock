@@ -35,7 +35,7 @@ function About() {
   ];
   return (
     <div>
-      <div className="container mx-auto py-10  w-full max-w-screen-xl px-4 md:px-16">
+      <div className="container mx-auto py-20  w-full max-w-screen-xl px-4 md:px-16">
         <div className="grid grid-cols-2 gap-5">
           <div className="flex justify-center items-center p-5">
             <div>

@@ -70,7 +70,7 @@ function Product() {
   const [productFilter, setProductFilter] = useState(product);
   return (
     <div className="container mx-auto pt-32 h-screen overflow-hidden">
-      <p className=" text-2xl text-center lg:text-3xl font-semibold leading-loose">
+      <p className=" text40 text-center  font-semibold leading-loose">
         Our Products
       </p>
 
@@ -81,8 +81,8 @@ function Product() {
             onClick={()=>setActiveIndex(ind)}
               key={ind}
               className={`${
-                activeIndex==ind ? "bg-wsDark text-white " : "bg-white text-black "
-              } rounded-full px-6 border border-gray-200 mr-2`}
+                activeIndex==ind ? "bg-theme text-white " : "bg-white text-black "
+              } rounded-full px-6 border border-gray-200 mr-2 py-2.5`}
             >
               {ele.name}
             </button>
@@ -93,7 +93,7 @@ function Product() {
       <div className="flex justify-between pb-40 flex-wrap my-10 h-[80vh] overflow-scroll">
         {data.map((ele, ind) => {
           return (
-            <div onClick={()=>navigate('/productInfomation')}  className=" w-[90%] mx-auto lg:w-[30%] shadow bg-white rounded-2xl mt-16">
+            <div onClick={()=>navigate('/ProductCategory')}  className=" w-[90%] mx-auto lg:w-[30%] shadow bg-white rounded-2xl mt-16">
               <img className="w-full" src={ele.img} />
               <div className="flex items-center justify-between px-3">
                 <p className="text-2xl font-bold py-4">{ele?.name}</p>

@@ -1,9 +1,11 @@
 import React from "react";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Button = ({ name }) => {
   return (
-    <button className="bg-wsDark py-3.5 font-medium min-w-[150px] max-w-[200px] px-2 rounded-full text-white">
-      {name ? name : "Explore"}
+    <button className="bg-theme py-3.5 font-medium  w-[250px] px-2  rounded-sm text-black flex items-center justify-center gap-4">
+      {name ? name : "Explore Now"}
+      <FaArrowRight/>
     </button>
   );
 };

@@ -18,7 +18,6 @@ function Home() {
       <HomeAbout />
       <HomeSubAbout />
       <HomeService1 />
-      
       <Footer />
     </div>
   );

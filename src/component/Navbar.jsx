@@ -3,6 +3,7 @@ import { imagesConstant } from "../utils/ImageConstant";
 import { NavLink, Route, Routes } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { FaArrowRight } from "react-icons/fa6";
 function Navbar() {
   useEffect(() => {
     Aos.init({
@@ -20,26 +21,29 @@ function Navbar() {
   ];
 
   return (
-    <nav className="backdrop-blur-sm  bg-white/50 shadow-xl  w-full z-50 top-0 start-0  ">
-      <div className="container flex flex-wrap items-center justify-between  mx-auto p-4">
+    <nav className="backdrop-blur-sm pl:ml-20 w-screen  bg-background  fixed top-0  lg:pl-20 z-40  start-0  ">
+      <div className="container flex flex-wrap items-center justify-between  mx-auto  pt-5 pb-2">
         <a
           href="#"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img
+
+          <p className=" text-xl font-semibold text-white">Black Rock</p>
+          {/* <img
             className="h-14"
             src={imagesConstant.Logo}
-            alt="Black Rock Logo"
-          />
+            alt="whtext-white Rock Logo"
+          /> */}
 
           
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
-            className="text-white bg-wsDark rounded-full px-10"
+            className="text-white bg-thtext-theme bg-theme px-6 py-2 rounded-sm flex items-center gap-5"
           >
             Sign Up
+            <FaArrowRight/>
           </button>
           <button
             data-collapse-toggle="navbar-sticky"
@@ -77,8 +81,8 @@ function Navbar() {
                   to={"/"}
                   className={({ isActive }) => {
                     return isActive
-                      ? "text-wsDark border-b-4 border-wsDark pb-3 px-5 rounded"
-                      : "text-black";
+                      ? "text-theme border-b-2 border-theme border-thtext-theme pb-3 px-5 "
+                      : "text-white";
                   }}
                 >
                   Home
@@ -87,13 +91,13 @@ function Navbar() {
             </li>
 
             <li>
-              <p className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
+              <p className="block py-2 px-3 text-white bg-theme rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
                 <NavLink
                   to={"/about"}
                   className={({ isActive }) => {
                     return isActive
-                      ? "text-wsDark border-b-4 border-wsDark pb-3 px-5 rounded"
-                      : "text-black";
+                      ? "text-theme border-b-2 border-theme border-thtext-theme pb-3 px-5 "
+                      : "text-white";
                   }}
                 >
                   About Us
@@ -102,13 +106,13 @@ function Navbar() {
             </li>
 
             <li>
-              <p className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
+              <p className="block py-2 px-3 text-white bg-theme rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
                 <NavLink
                   to={"/product"}
                   className={({ isActive }) => {
                     return isActive
-                      ? "text-wsDark border-b-4 border-wsDark pb-3 px-5 rounded"
-                      : "text-black";
+                      ? "text-theme border-b-2 border-theme border-thtext-theme pb-3 px-5 "
+                      : "text-white";
                   }}
                 >
                   Products
@@ -118,13 +122,13 @@ function Navbar() {
 
 
             <li>
-              <p className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
+              <p className="block py-2 px-3 text-white bg-theme rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
                 <NavLink
                   to={"/services"}
                   className={({ isActive }) => {
                     return isActive
-                      ? "text-wsDark border-b-4 border-wsDark pb-3 px-5 rounded"
-                      : "text-black";
+                      ? "text-theme border-b-2 border-theme border-thtext-theme pb-3 px-5 "
+                      : "text-white";
                   }}
                 >
                   Services
@@ -133,13 +137,13 @@ function Navbar() {
             </li>
 
             <li>
-              <p className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
+              <p className="block py-2 px-3 text-white bg-theme rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
                 <NavLink
                   to={"/contact"}
                   className={({ isActive }) => {
                     return isActive
-                      ? "text-wsDark border-b-4 border-wsDark pb-3 px-5 rounded"
-                      : "text-black";
+                      ? "text-theme border-b-2 border-theme border-thtext-theme pb-3 px-5 "
+                      : "text-white";
                   }}
                 >
                   Contact us
@@ -154,3 +158,7 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+
+

@@ -256,7 +256,7 @@ function HomeService1() {
             <img width="300px" src={imagesConstant.arrowDesign} alt="" />
           </div>
           <div className="grid lg:grid-cols-2 gap-5 my-4">
-            <div className="bg-black p-10">
+            <div className="bg-theme p-10">
               <h2 className="text-white text-4xl font-bold">
                 Our Interior Design Team In UAE
               </h2>
