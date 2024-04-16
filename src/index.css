@@ -7,6 +7,25 @@
 
 
 
+.ml-5::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px; /* underline thickness */
+  background-color: black; /* underline color */
+  left: 0;
+  bottom: -3px; /* space between text and underline */
+  opacity: 0; /* start invisible */
+  transition: opacity 0.3s, background-color 0.3s;
+}
+
+.ml-5:hover::after {
+  opacity: 1; /* make underline visible on hover */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* shadow effect */
+}
+
+
+
 body{
   height: 100vh;
   width: 100vw;

@@ -28,7 +28,7 @@ function Navbar() {
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
 
-          <p className=" text-xl font-semibold text-white">Black Rock</p>
+          <p className=" text-xl font-semibold text-white">BLACK-ROCK</p>
           {/* <img
             className="h-14"
             src={imagesConstant.Logo}
@@ -42,7 +42,7 @@ function Navbar() {
             type="button"
             className="text-white bg-thtext-theme bg-theme px-6 py-2 rounded-sm flex items-center gap-5"
           >
-            Sign Up
+            Enquiry
             <FaArrowRight/>
           </button>
           <button
@@ -119,7 +119,20 @@ function Navbar() {
                 </NavLink>
               </p>
             </li>
-
+            <li>
+              <p className="block py-2 px-3 text-white bg-theme rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
+                <NavLink
+                  to={"/portfolio"}
+                  className={({ isActive }) => {
+                    return isActive
+                      ? "text-theme border-b-2 border-theme border-thtext-theme pb-3 px-5 "
+                      : "text-white";
+                  }}
+                >
+                  Portfolio
+                </NavLink>
+              </p>
+            </li>
 
             <li>
               <p className="block py-2 px-3 text-white bg-theme rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">

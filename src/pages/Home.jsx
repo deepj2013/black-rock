@@ -15,9 +15,9 @@ function Home() {
   return (
     <div className="">
       <HomeComponents />
-      <HomeAbout />
+      {/* <HomeAbout /> */}
       <HomeSubAbout />
-      <HomeService1 />
+      {/* <HomeService1 /> */}
       <Footer />
     </div>
   );

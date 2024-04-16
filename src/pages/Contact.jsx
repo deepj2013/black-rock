@@ -30,12 +30,18 @@ function Contact() {
         </div>
       </div>
       <div className="  container py-10  mx-auto w-full max-w-screen-xl px-4 md:px-16">
-        <div className="grid lg:grid-cols-2 gap-5">
+        <div className="grid lg:grid-cols-2 gap-6">
           <div className="p-5">
-            <h2 className="text-3xl my-3 font-bold">Get Free Quote</h2>
+            <h2 className="text-3xl my-3 font-bold">
+              Contact Us for a Free Quote
+            </h2>
             <p className="my-5">
-              We are Trying Our Best to Deliver Our Customers Real High-Quality
-              Services With Satisfaction Our Top Priority.
+              At <b>BLACK ROCK </b>, based in Dubai, we are committed to delivering
+              top-tier services in exporting interiors, furniture, and household
+              items. Ensuring your satisfaction is our priority, and we strive
+              to provide real high-quality solutions tailored to meet your
+              needs. Reach out to us to experience unparalleled excellence in
+              every transaction.
             </p>
             <form action="">
               <div className="grid grid-cols-2 gap-4 text-gray-500">
@@ -55,29 +61,44 @@ function Contact() {
             </form>
           </div>
           <div className="p-5 flex justify-center items-center">
-            <div >
-              <div >
-                <p className="my-2 flex items-center text-2xl hover:text-wsDark cursor-pointer transition duration-300">
-                  <FaMapMarkerAlt />{" "}
-                  <span className="ml-4">
-                    Dubai design district, building 1B, office 601, Dubai, UAE
+            <div>
+              <div>
+                <p className="my-2 flex items-center text-3xl cursor-pointer transition duration-300 hover:text-black">
+                  <span className="ml-5 relative block bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-blue-500">
+                    Black Rock Trading FZ-LLC
                   </span>
                 </p>
-                <p className="my-2 mt-3 flex items-center text-2xl hover:text-wsDark cursor-pointer transition duration-300">
-                  <MdOutlineMailOutline />{" "}
-                  <span className="ml-4">info@qwerftgh.com</span>
+                <p className="my-2 flex items-center text-2l hover:text-wsDark cursor-pointer transition duration-300">
+                  <FaMapMarkerAlt />{" "}
+                  <span className="ml-2">
+                    FOB50524, Compass Building, Al Shohada Road, AL Hamra
+                    Industrial Zone-FZ, Ras Al Khaimah, United Arab Emirates
+                  </span>
                 </p>
-                <p className="my-2 flex items-center text-2xl hover:text-wsDark cursor-pointer transition duration-300">
-                  <MdAddCall /> <span className="ml-4">+987654563</span>
+                <p className="my-2 mt-3 flex items-center text-2l hover:text-wsDark cursor-pointer transition duration-300">
+                  <MdOutlineMailOutline />{" "}
+                  <span className="ml-4">info@blackrock-uae.com</span>
+                </p>
+                <p className="my-2 flex items-center text-2l hover:text-wsDark cursor-pointer transition duration-300">
+                  <MdAddCall /> <span className="ml-4">+971-52967 5363</span>
                 </p>
               </div>
               <div>
-              {/* <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7221.350918276685!2d55.298147!3d25.180434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f433ee13b6801%3A0x28a16bd592be6aae!2sMuse%20Interior%20Design!5e0!3m2!1sen!2sus!4v1712242703173!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+                <div className="w-full max-w-4xl mx-auto p-4">
+                  <iframe
+                    title="Black Rock Trading FZ-LLC"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14382.196672305035!2d55.779354087158225!3d25.68623540000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef60a61412b1615%3A0x8382e57f1d189185!2sRakez%20AlHamra%20Industrial%20Zone!5e0!3m2!1sen!2sin!4v1713199641582!5m2!1sen!2sin"
+                    width="100%"
+                    height="300"
+                    style={{ border: 0 }}
+                    allowFullScreen={true}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
-         
-          
         </div>
       </div>
     </div>

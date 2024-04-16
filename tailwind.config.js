@@ -52,6 +52,7 @@ module.exports = withMT({
         pur:'#7429D4',
         foot:'#25232F',
         purpleShade:'#7B17CA',
+        white: "#FFFFFF",
 
         // dark mode colror
         darkSecondry: "#000000",

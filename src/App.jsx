@@ -14,6 +14,8 @@ import { IoLogoFlickr } from "react-icons/io5";
 import ProductCategory from './pages/ProductCategory'
 import Admin from './admin/Admin'
 import Dashboard from './admin/DashboardPages/Dashboard'
+import logo from './assets/logo.png';
+import Portfolio from './pages/Portfolio'
 
 
 
@@ -40,11 +42,6 @@ function App() {
     }
   }, []);
 
-
-
-  console.log(location.search,'currentPathname');
-  
-
   const token=localStorage.getItem('token');
   return (
     <>
@@ -52,8 +49,8 @@ function App() {
     <div className=" mx-auto  overflow-scroll h-screen relative rounded-2xl">
     <div className='fixed h-screen w-20 hidden lg:flex  bg-background z-50 rounded-t-lg overflow-hidden'>
       <div>
-        <div className=' h-20 bg-theme w-20 flex justify-center items-center'>
-          <IoLogoFlickr className='text-4xl text-white'/>
+        <div className=' h-20 bg-white  w-20 flex justify-center items-center rounded-t-lg'>
+        <img src ={logo} />
         </div>
       </div>
     </div>
@@ -67,6 +64,7 @@ function App() {
         <Route path="/services" element={<OurServices />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/ProductCategory" element={<ProductCategory />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/Admin" element={<Admin  setIsLoggedIn={setIsLoggedIn}/>} />
 
       </Routes>

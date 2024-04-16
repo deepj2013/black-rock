@@ -25,9 +25,7 @@ function HomeComponents() {
           </p>
           <div className=" w-[100%] lg:w-[50%]  3xxl:w-[30%] ">
           <p className="mt-5">
-            Urban crafty furniture with modern, simple and elegant designs for
-            your home Urban crafty furniture with modern, simple and elegant
-            designs for your home
+          Discover a comprehensive collection of urban crafty furnishings, kitchen essentials, interior accents, and unique showpieces, all designed with a modern, simple, and elegant flair to enhance every corner of your home.
           </p>
           </div>
           <div className="my-10 flex gap-10 flex-wrap">
