@@ -44,23 +44,26 @@ function About() {
               </p>
 
               <p className="my-5">
-                Founded in<strong> 2024, Black Rock Trading FZ LLC </strong>has
-                evolved from a local trading company into a distinguished global
-                market presence. Our growth trajectory is marked by relentless
-                dedication, groundbreaking innovation, and an unwavering
-                commitment to excellence. As we continue to expand our horizons,
-                our focus remains on delivering superior value and building
-                lasting relationships with our partners worldwide.
+                Welcome to <strong>Black Rock Trading FZ LLC </strong>, your gateway to a world of
+                unparalleled elegance in home decor and accessories. Established
+                with a passion for timeless design, we pride ourselves on
+                offering a carefully curated selection that transforms houses
+                into homes.</p>
+                
+               <p className="my-5"> At <strong>Black Rock Trading</strong>, we believe that every space
+                tells a unique story, and our collection is crafted to be a part
+                of yours. Immerse yourself in a symphony of styles, from
+                contemporary chic to classic sophistication, as we bring you an
+                exquisite array of decor and accessories. </p><p className="my-5">With a commitment to
+                quality and an eye for detail, our products embody the perfect
+                blend of functionality and aesthetics. As a team dedicated to
+                enriching your living experience, we invite you to explore our
+                offerings and discover how Black Rock Trading FZ LLC can be the
+                inspiration behind your home's distinct character. Welcome to a
+                haven where style meets substance, and every corner is a canvas
+                for your personal expression.
               </p>
-
-              <p className="my-5">
-                At <strong>Black Rock Trading FZ LLC </strong>, we pride
-                ourselves on our ability to adapt and thrive in the dynamic
-                global marketplace, consistently pushing the boundaries of what
-                is possible in international trade. Join us on our journey as we
-                set new standards in the industry and contribute to global
-                economic growth.
-              </p>
+             
             </div>
           </div>
           <div>
@@ -72,34 +75,33 @@ function About() {
         </div>
       </div>
       <div className="container bg-wsLight mx-auto py-10  w-full max-w-screen-xl px-4 md:px-16">
-        
-
-        
-          <div className="">
+        <div className="">
           <h2 className="text-center text-wsDark text-3xl font-semibold uppercase">
             Our Mission | Vission
           </h2>
         </div>
-          <div>
-            <p className=" text-2xl lg:text-3xl font-semibold leading-loose text-wsDark">
-              Mission
-            </p>
-
-            <p className="my-5">
-            To provide superior trading services globally, specializing in household items, textiles, modular kitchens, and office accessories. We aim to serve with integrity, innovation, and excellence..
-            </p>
-          </div>
-          
-       
         <div>
-            <p className=" text-2xl lg:text-3xl font-semibold leading-loose text-wsDark">
-              Vission
-            </p>
+          <p className=" text-2xl lg:text-3xl font-semibold leading-loose text-wsDark">
+            Mission
+          </p>
 
-            <p className="my-5">
-            To be a globally recognized leader in general trading, renowned for our innovative solutions, integrity, and exceptional service.
-            </p>
-          </div>
+          <p className="my-5">
+            To provide superior trading services globally, specializing in
+            household items, textiles, modular kitchens, and office accessories.
+            We aim to serve with integrity, innovation, and excellence..
+          </p>
+        </div>
+
+        <div>
+          <p className=" text-2xl lg:text-3xl font-semibold leading-loose text-wsDark">
+            Vission
+          </p>
+
+          <p className="my-5">
+            To be a globally recognized leader in general trading, renowned for
+            our innovative solutions, integrity, and exceptional service.
+          </p>
+        </div>
         {/* <div className="grid lg:grid-cols-3">
           <div className=" bg-white p-10 border">
             <div className="flex justify-center items-center">
@@ -269,7 +271,7 @@ function About() {
             </div>
 /         </div>
         </div> */}
-      </div> 
+      </div>
 
       <Footer />
     </div>
